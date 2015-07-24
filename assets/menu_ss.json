@@ -1,0 +1,27 @@
+{"frames":{
+
+"menu_title":
+{
+	"frame":{"x":0,"y":0,"w":640,"h":295},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":640,"y":295},
+	"sourceSize":{"w":640,"h":295}
+},
+"tap_to_start":
+{
+	"frame":{"x":0,"y":296,"w":520,"h":222},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":520,"y":222},
+	"sourceSize":{"w":520,"h":222}
+},
+"menu_bg":
+{
+	"frame":{"x":641,"y":0,"w":4,"h":512},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":4,"y":512},
+	"sourceSize":{"w":4,"h":512}
+}
+}}

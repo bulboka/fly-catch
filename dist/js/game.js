@@ -3,7 +3,7 @@
 
 //global variables
 window.onload = function () {
-  var game = new Phaser.Game(540, 960, Phaser.AUTO, 'flycatch');
+  var game = new Phaser.Game(640, 960, Phaser.AUTO, 'flycatch');
 
   // Game States
   game.state.add('boot', require('./states/boot'));
@@ -68,57 +68,87 @@ module.exports = GameOver;
 function Menu() {}
 
 Menu.prototype = {
-  preload: function() {
+	preload: function() {
 
-  },
-  create: function() {
-    var style = { font: '65px Arial', fill: '#ffffff', align: 'center'};
-    this.sprite = this.game.add.sprite(this.game.world.centerX, 138, 'yeoman');
-    this.sprite.anchor.setTo(0.5, 0.5);
-
-    this.titleText = this.game.add.text(this.game.world.centerX, 300, '\'Allo, \'Allo!', style);
-    this.titleText.anchor.setTo(0.5, 0.5);
-
-    this.instructionsText = this.game.add.text(this.game.world.centerX, 400, 'Click anywhere to play "Click The Yeoman Logo"', { font: '16px Arial', fill: '#ffffff', align: 'center'});
-    this.instructionsText.anchor.setTo(0.5, 0.5);
-
-    this.sprite.angle = -20;
-    this.game.add.tween(this.sprite).to({angle: 20}, 1000, Phaser.Easing.Linear.NONE, true, 0, 1000, true);
-  },
-  update: function() {
-    if(this.game.input.activePointer.justPressed()) {
-      this.game.state.start('play');
-    }
-  }
+	},
+	create: function() {
+		this.background = this.game.add.sprite(0, this.game.height - 406, "menuAtlas", "menu_bg");
+		this.background.width = this.game.width;
+		this.title = this.game.add.sprite(0, 155, "menuAtlas", "menu_title");
+		this.tap_text = this.game.add.sprite(43, 631, "menuAtlas", "tap_to_start");
+		//this.tap_text.anchor.setTo(0.5, 0.5);
+		this.game.add.tween(this.tap_text)
+			.to({alpha:0.3}, 2000, Phaser.Easing.Cubic.InOut, true, 0, 1000, true);
+	},
+	update: function() {
+		if (this.game.input.activePointer.justPressed()) {
+			this.game.state.start("play");
+		}
+	}
 };
 
 module.exports = Menu;
 
 },{}],5:[function(require,module,exports){
 
-  'use strict';
-  function Play() {}
-  Play.prototype = {
-    create: function() {
-      this.game.physics.startSystem(Phaser.Physics.ARCADE);
-      this.sprite = this.game.add.sprite(this.game.width/2, this.game.height/2, 'yeoman');
-      this.sprite.inputEnabled = true;
-      
-      this.game.physics.arcade.enable(this.sprite);
-      this.sprite.body.collideWorldBounds = true;
-      this.sprite.body.bounce.setTo(1,1);
-      this.sprite.body.velocity.x = this.game.rnd.integerInRange(-500,500);
-      this.sprite.body.velocity.y = this.game.rnd.integerInRange(-500,500);
+'use strict';
+function Play() {}
+Play.prototype = {
+	create: function() {
+		this.game.world.setBounds(0, 0, this.game.width, this.game.height);
+		this.game.physics.startSystem(Phaser.Physics.P2JS);
+		this.game.physics.p2.restituion = 0.8;
 
-      this.sprite.events.onInputDown.add(this.clickListener, this);
-    },
-    update: function() {
+		this.apple = this.game.add.sprite(340, 550, "playAtlas", "apple0");
+		this.apple.anchor.setTo(0.5, 0.5);
+		this.game.physics.p2.enable(this.apple);
+		this.apple.body.clearShapes();
+		this.appleShape = this.apple.body.addCircle(250);
+		this.apple.body.debug = true;
+		this.haveToUpdate = true;
+		//this.apple.width = this.apple.height = 250;
+		//this.appleShape.radius = 100;
+		//this.appleShape.updateBoundingRadius();
 
-    },
-    clickListener: function() {
-      this.game.state.start('gameover');
-    }
-  };
+		this.sachockTop = this.game.add.sprite(100, 100, "playAtlas", "sachockEnterTop");
+		this.sachockBottom = this.game.add.sprite(100, 300, "playAtlas", "sachockEnterBottom");
+		this.game.physics.p2.enable([this.sachockTop, this.sachockBottom]);
+		this.sachockTop.body.kinematic = true;
+		this.sachockBottom.body.kinematic = true;
+
+		this.cursors = this.game.input.keyboard.createCursorKeys();
+	},
+	update: function() {
+
+		this.appleShape.radius -= 0.01;
+		this.apple.width -= 0.45;
+		this.apple.height -= 0.45;
+		this.appleShape.updateBoundingRadius();
+		this.apple.body.debugBody.draw();
+
+		if (this.cursors.left.isDown)
+		{
+			this.apple.body.rotateLeft(80);
+		}
+		else if (this.cursors.right.isDown)
+		{
+			this.apple.body.rotateRight(80);
+		}
+		else
+		{
+			this.apple.body.setZeroRotation();
+		}
+
+		if (this.cursors.up.isDown)
+		{
+			this.apple.body.thrust(400);
+		}
+		else if (this.cursors.down.isDown)
+		{
+			this.apple.body.reverse(400);
+		}
+	}
+};
   
   module.exports = Play;
 },{}],6:[function(require,module,exports){
@@ -130,21 +160,22 @@ function Preload() {
 }
 
 Preload.prototype = {
-  preload: function() {
-    this.asset = this.add.sprite(this.width/2,this.height/2, 'preloader');
-    this.asset.anchor.setTo(0.5, 0.5);
+	preload: function() {
+		this.asset = this.add.sprite(this.width/2,this.height/2, 'preloader');
+		this.asset.anchor.setTo(0.5, 0.5);
+		this.game.stage.backgroundColor = 0xffffff;
 
-    this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
-    this.load.setPreloadSprite(this.asset);
-    this.load.image('yeoman', 'assets/yeoman-logo.png');
-
-  },
+		this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
+		this.load.setPreloadSprite(this.asset);
+		this.game.load.atlasJSONHash("menuAtlas", "assets/menu_ss.png", "assets/menu_ss.json");
+		this.game.load.atlasJSONHash("playAtlas", "assets/play_ss.png", "assets/play_ss.json");
+	},
   create: function() {
     this.asset.cropEnabled = false;
   },
   update: function() {
     if(!!this.ready) {
-      this.game.state.start('menu');
+      this.game.state.start('play');
     }
   },
   onLoadComplete: function() {

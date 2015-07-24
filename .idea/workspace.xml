@@ -1,7 +1,687 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94c6028a-9a6c-41a2-a4c5-307ca324e20f" name="Default" comment="" />
+    <list default="true" id="94c6028a-9a6c-41a2-a4c5-307ca324e20f" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\ninja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\ninja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\p2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\p2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\phaser-no-libs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\phaser-no-libs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\pixi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\custom\pixi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\build\phaser.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\AABB.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Animation.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\AnimationManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\AnimationParser.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\BitmapData.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\BitmapText.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Body.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Body.js_.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Body.js__.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\BodyDebug.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Button.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Cache.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Camera.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Canvas.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Circle.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Circle.js_.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\CollisionGroup.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Color.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\ContactMaterial.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Debug.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Device.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\DistanceConstraint.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Easing.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Ellipse.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Emitter.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Events.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Filter.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Frame.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\FrameData.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Game.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\GameObjectCreator.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\GameObjectFactory.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Gamepad.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\GamepadButton.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\GearConstraint.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Graphics.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Group.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Image.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Input.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\InputHandler.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\InversePointProxy.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Key.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Keyboard.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Line.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\LinkedList.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Loader.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\LoaderParser.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\LockConstraint.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\MSPointer.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Material.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Math.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Mouse.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Net.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Particles.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Phaser.GamepadButton.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Phaser.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Physics.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Plugin.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\PluginManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Point.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\PointProxy.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Pointer.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Polygon.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\PrismaticConstraint.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\QuadTree.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\RandomDataGenerator.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Rectangle.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\RenderTexture.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\RequestAnimationFrame.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\RetroFont.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\RevoluteConstraint.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\ScaleManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Signal.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\SignalBinding.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\SignalBinding.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\SinglePad.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Sound.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\SoundManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Spring.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Sprite.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\SpriteBatch.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Stage.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\State.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\StateManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Text.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Tile.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Tile.js_.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\TileSprite.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Tilemap.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\TilemapLayer.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\TilemapParser.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Tileset.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Time.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Timer.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\TimerEvent.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Touch.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Tween.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\TweenManager.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\Utils.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\World.js.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\World.js_.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\World.js__.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\World.js___.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\build master.bat" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\conf.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\styles\bootswatch.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\styles\main.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\styles\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\jsdoc.conf.json" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\publish.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\img\glyphicons-halflings-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\img\glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\URI.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\bootstrap-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\bootstrap-tab.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\jquery.localScroll.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\jquery.scrollTo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\jquery.sunlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\prettify\Apache-License-2.0.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\prettify\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\prettify\lang-css.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\prettify\prettify.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\sunlight-plugin.doclinks.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\sunlight-plugin.linenumbers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\sunlight-plugin.menu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\sunlight.javascript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\sunlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\scripts\toc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\styles\darkstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\styles\prettify-tomorrow.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\styles\site.cerulean.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\styles\sunlight.dark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\static\styles\sunlight.default.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\container.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\details.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\example.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\examples.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\exceptions.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\fires.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\layout.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\mainpage.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\members.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\method.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\params.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\properties.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\returns.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\sections.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\source.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\tutorial.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\docs\build\docstrap-master\template\tmpl\type.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\examples\where have they gone.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\001 under sea.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\002 animated tilesprites.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\003 thrust.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\004 maggot batch.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\005 ilkkeee.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\006 bitmap fonts ahoy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\007 text shadow.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\008 cannon balls.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\009 boxes everywhere.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\010 fixed to camera.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\011 font wobble.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\code\012 ninja physics.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\css\component.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\css\demo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\css\normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\index.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\index_local.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\index_remote.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\js\modernizr.custom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\list.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\view.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\view_local.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\labs\view_remote.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\AStar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\CSS3Filters.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\ColorHarmony.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\ProTracker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\QuadTree.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\SamplePlugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\plugins\Webcam.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\resources\Phaser Logo\PNG\Phaser-2D-Flat.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\resources\Phaser Logo\PNG\Phaser-2D-Flat.psd" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\core\LinkedList.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\gameobjects\Events.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\input\GamepadButton.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\InteractionData.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\InteractionManager.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Circle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Ellipse.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Matrix.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Point.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\core\Rectangle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\display\MovieClip.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\extras\Spine.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\AlphaMaskFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\BlurFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\BlurXFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\BlurYFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\ColorMatrixFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\ColorStepFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\CrossHatchFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\DisplacementFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\DotScreenFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\FilterBlock.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\GrayFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\InvertFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\NormalMapFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\PixelateFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\RGBSplitFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\SepiaFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\SmartBlurFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\filters\TwistFilter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\AssetLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\AtlasLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\BitmapFontLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\ImageLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\JsonLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\SpineLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\loaders\SpriteSheetLoader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\text\BitmapText.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\text\Text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\src\pixi\utils\Detector.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tasks\examples.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tasks\umd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\hellophaser.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\hellophaser\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\hellophaser\phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\hellophaser\phaser.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\images\cloneFrom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\images\dashboard.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\images\editor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\images\start.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part5.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part6.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part7.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\01 Getting Started\part8.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\baddie.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\dude.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\firstaid.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\platform.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\sky.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\assets\star.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\js\phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part5.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part6.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part7.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part8.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\part9.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\phaser_1x_tutorial_02.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\phaser_tutorial_02.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\part9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\screen shots\tutorial_header.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\02 Making your first game\tutorial.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\03 Using Phaser with TypeScript\screen shots\part9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\level1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\loader.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\simon.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\title.mp3" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\assets\titlepage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\screen shots\part5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\04 Advanced TypeScript Projects\visualstudio_project.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\images\cloneFrom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\images\dashboard.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\images\editor.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\images\start.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part5.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part6.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part7.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\01 Comenzando\part8.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\baddie.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\diamond.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\dude.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\firstaid.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\platform.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\sky.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\assets\star.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\js\phaser.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part2.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part3.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part4.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part5.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part6.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part7.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part8.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\part9.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\phaser_tutorial_02.zip" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part7.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part8.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\part9.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\screen shots\tutorial_header.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\tutorials\Spanish\02 Creando tu primer juego\tutorial.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\assets\preloader.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\assets\yeoman-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\css\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\js\game.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\js\phaser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\ro\html5\fly-catch\dist\js\phaser.min.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\ro\html5\fly-catch\bower_components\phaser-official\changelog.md" afterPath="$PROJECT_DIR$/bower_components/phaser-official/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/gameplay0.psd" afterPath="$PROJECT_DIR$/assets_src/gameplay0.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets_src/menu0.psd" afterPath="$PROJECT_DIR$/assets_src/menu0.psd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Phaser Logo/Pixel Art/phaser_pixel_large_shaded.png" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Phaser Logo/Pixel Art/phaser_pixel_large_shaded.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Screen Shots/phaser_quadtree.png" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Screen Shots/phaser_quadtree.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/AABB.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/AABB.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/filters/AbstractFilter.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/filters/AbstractFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/Animation.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/Animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/AnimationManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/AnimationManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/AnimationParser.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/AnimationParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/Apache-License-2.0.txt" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/Apache-License-2.0.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/arcade/ArcadeParticles.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/arcade/ArcadeParticles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/BaseTexture.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/BaseTexture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/BinarySerpents.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/BinarySerpents.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/BitmapData.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/BitmapData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/BitmapText.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/BitmapText.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/BlurX.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/BlurX.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/BlurY.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/BlurY.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/arcade/Body.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/arcade/Body.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Body.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Body.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Body.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Body.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/BodyDebug.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/BodyDebug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Boot.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Boot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Boot.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Boot.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Button.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/bower_components/phaser-official/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/Cache.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/Cache.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Camera.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Camera.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/system/Canvas.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/system/Canvas.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/CanvasGraphics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/CanvasGraphics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/utils/CanvasMaskManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/utils/CanvasMaskManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/CanvasRenderer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/CanvasRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/utils/CanvasTinter.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/canvas/utils/CanvasTinter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/CausticLight.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/CausticLight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/CheckerWave.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/CheckerWave.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Circle.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Circle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Circle.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Circle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/CollisionGroup.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/CollisionGroup.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Color.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Color.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/ColorBars.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/ColorBars.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/ContactMaterial.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/ContactMaterial.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Debug.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Debug.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/system/Device.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/system/Device.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/DisplayObject.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/DisplayObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/DisplayObjectContainer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/DisplayObjectContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/DistanceConstraint.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/DistanceConstraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/Easing.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/Easing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Ellipse.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Ellipse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/arcade/Emitter.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/arcade/Emitter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/EventTarget.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/EventTarget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Filter.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Filter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/FilterTexture.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/FilterTexture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/Fire.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/Fire.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/Frame.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/Frame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/FrameData.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/animation/FrameData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Game.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Game.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Game.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/GameObjectCreator.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/GameObjectCreator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/GameObjectFactory.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/GameObjectFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Gamepad.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Gamepad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/GearConstraint.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/GearConstraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Graphics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Graphics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/primitives/Graphics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/primitives/Graphics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/Gray.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/Gray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Group.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Group.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/Gruntfile.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/HueRotate.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/HueRotate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Image.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Input.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Input.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/InputHandler.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/InputHandler.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/Intro.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/Intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Intro.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/InversePointProxy.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/InversePointProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Key.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Key.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Keyboard.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Keyboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/LightBeam.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/LightBeam.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Line.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/Loader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/Loader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/LoaderParser.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/loader/LoaderParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/LockConstraint.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/LockConstraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/MSPointer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/MSPointer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/MainMenu.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/MainMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/MainMenu.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/MainMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/Marble.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/Marble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Material.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Material.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/math/Math.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/math/Math.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Migration Guide.md" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Migration Guide.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Mouse.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Mouse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/net/Net.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/net/Net.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/Outro.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/Outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Outro.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Outro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/Particles.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/particles/Particles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Animation.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Animation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.AnimationManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.AnimationManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.AnimationParser.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.AnimationParser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.BitmapData.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.BitmapData.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.BitmapText.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.BitmapText.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Button.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Button.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Cache.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Cache.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Camera.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Camera.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Canvas.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Canvas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Circle.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Circle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Color.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Color.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Device.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Device.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Back.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Back.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Bounce.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Bounce.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Circular.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Circular.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Cubic.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Cubic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Elastic.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Elastic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Exponential.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Exponential.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Linear.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Linear.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quadratic.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quadratic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quartic.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quartic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quintic.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Quintic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Sinusoidal.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.Sinusoidal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Easing.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Ellipse.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Ellipse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Events.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Filter.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Filter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Frame.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Frame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.FrameData.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.FrameData.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Game.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Game.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.GameObjectCreator.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.GameObjectCreator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.GameObjectFactory.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.GameObjectFactory.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Gamepad.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Gamepad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Graphics.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Graphics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Group.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Image.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Image.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Input.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Input.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.InputHandler.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.InputHandler.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Key.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Key.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Keyboard.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Keyboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Line.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Line.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.LinkedList.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.LinkedList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Loader.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Loader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.LoaderParser.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.LoaderParser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.MSPointer.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.MSPointer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Math.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Math.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Mouse.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Mouse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Net.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Net.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Particles.Arcade.Emitter.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Particles.Arcade.Emitter.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Particles.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Particles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Arcade.Body.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Arcade.Body.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Arcade.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Arcade.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.AABB.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.AABB.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Body.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Body.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Circle.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Circle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Tile.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.Tile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.Ninja.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Body.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Body.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.BodyDebug.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.BodyDebug.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.CollisionGroup.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.CollisionGroup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.ContactMaterial.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.ContactMaterial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.DistanceConstraint.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.DistanceConstraint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.GearConstraint.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.GearConstraint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.InversePointProxy.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.InversePointProxy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.LockConstraint.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.LockConstraint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Material.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Material.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.PointProxy.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.PointProxy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.PrismaticConstraint.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.PrismaticConstraint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.RevoluteConstraint.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.RevoluteConstraint.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Spring.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.Spring.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.P2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Physics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Plugin.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Plugin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.PluginManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.PluginManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Point.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Point.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Pointer.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Pointer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Polygon.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Polygon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.QuadTree.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.QuadTree.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RandomDataGenerator.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RandomDataGenerator.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Rectangle.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Rectangle.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RenderTexture.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RenderTexture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RequestAnimationFrame.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RequestAnimationFrame.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RetroFont.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.RetroFont.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.ScaleManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.ScaleManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Signal.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Signal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SinglePad.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SinglePad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Sound.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Sound.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SoundManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SoundManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Sprite.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Sprite.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SpriteBatch.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.SpriteBatch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Stage.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Stage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.State.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.State.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.StateManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.StateManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Text.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Text.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tile.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TileSprite.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TileSprite.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tilemap.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tilemap.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TilemapLayer.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TilemapLayer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TilemapParser.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TilemapParser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tileset.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tileset.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Time.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Time.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Timer.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Timer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TimerEvent.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TimerEvent.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Touch.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Touch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tween.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Tween.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TweenManager.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.TweenManager.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Utils.Debug.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Utils.Debug.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Utils.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.Utils.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.World.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.World.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/Phaser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/Phaser.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/Phaser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/Physics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/Physics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Pixi.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/Pixi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PixiFastShader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PixiFastShader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PixiShader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PixiShader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/Plasma.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/Plasma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Plugin.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/PluginManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/PluginManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Point.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Point.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/PointProxy.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/PointProxy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Pointer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Pointer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Polygon.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Polygon.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/Polyk.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/Polyk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Preloader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/Preloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Preloader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/src/Preloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PrimitiveShader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/PrimitiveShader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/PrismaticConstraint.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/PrismaticConstraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/math/QuadTree.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/math/QuadTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/README.md" afterPath="$PROJECT_DIR$/bower_components/phaser-official/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/math/RandomDataGenerator.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/math/RandomDataGenerator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Rectangle.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/geom/Rectangle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/RenderTexture.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/RenderTexture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/RenderTexture.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/RenderTexture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/system/RequestAnimationFrame.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/system/RequestAnimationFrame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/RetroFont.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/RetroFont.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/RevoluteConstraint.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/RevoluteConstraint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/Rope.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/Rope.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/SampleFilter.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/SampleFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/ScaleManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/ScaleManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Signal.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Signal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/SignalBinding.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/SignalBinding.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/SinglePad.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/SinglePad.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/sound/Sound.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/sound/Sound.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/sound/SoundManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/sound/SoundManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Spring.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/Spring.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Sprite.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Sprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/Sprite.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/Sprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/SpriteBatch.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/SpriteBatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/SpriteBatch.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/SpriteBatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Stage.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/Stage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/Stage.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/display/Stage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/State.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/State.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/StateManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/StateManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/Strip.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/Strip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/StripShader.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/shaders/StripShader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Text.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/Text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/Texture.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/textures/Texture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Tile.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/Tile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tile.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/TileSprite.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/gameobjects/TileSprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tilemap.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tilemap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/TilemapLayer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/TilemapLayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/TilemapParser.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/TilemapParser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tileset.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tilemap/Tileset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/TilingSprite.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/extras/TilingSprite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/time/Time.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/time/Time.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/time/Timer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/time/Timer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/time/TimerEvent.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/time/TimerEvent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Touch.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/input/Touch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/filters/Tunnel.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/filters/Tunnel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/Tween.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/Tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/TweenManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/tween/TweenManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/URI.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/URI.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/Utils.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/utils/Utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Utils.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/utils/Utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLFastSpriteBatch.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLFastSpriteBatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLFilterManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLFilterManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLGraphics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLGraphics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLMaskManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLMaskManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/WebGLRenderer.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/WebGLRenderer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLShaderManager.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLShaderManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLShaderUtils.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLShaderUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLSpriteBatch.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/pixi/renderers/webgl/utils/WebGLSpriteBatch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/core/World.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/core/World.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/arcade/World.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/arcade/World.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/World.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/ninja/World.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/World.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/World.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/tasks/banner.txt" afterPath="$PROJECT_DIR$/bower_components/phaser-official/tasks/banner.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/bootstrap-dropdown.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/bootstrap-dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/bootstrap-tab.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/bootstrap-tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/bower.json" afterPath="$PROJECT_DIR$/bower_components/phaser-official/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/classes.list.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/classes.list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/config.php" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/darkstrap.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/darkstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/PhysicsEditor Exporter/exporter.xml" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/PhysicsEditor Exporter/exporter.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/index.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/index.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Basic/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/index.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.localScroll.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.localScroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.scrollTo.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.scrollTo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.sunlight.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/jquery.sunlight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/lang-css.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/lang-css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/license.txt" afterPath="$PROJECT_DIR$/bower_components/phaser-official/license.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/main.js" afterPath="$PROJECT_DIR$/game/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/states/menu.js" afterPath="$PROJECT_DIR$/game/states/menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/namespaces.list.html" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/namespaces.list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/p2.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/src/physics/p2/p2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/package.json" afterPath="$PROJECT_DIR$/bower_components/phaser-official/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/custom/phaser-no-physics.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/custom/phaser-no-physics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/custom/phaser-no-physics.min.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/custom/phaser-no-physics.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/PhysicsEditor Exporter/phaser.json" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/PhysicsEditor Exporter/phaser.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.map" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.min.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/build/phaser.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/states/play.js" afterPath="$PROJECT_DIR$/game/states/play.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/states/preload.js" afterPath="$PROJECT_DIR$/game/states/preload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/prettify-tomorrow.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/prettify-tomorrow.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/prettify.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/prettify/prettify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/site.cerulean.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/site.cerulean.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/css/stylesheet.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/Project Templates/Full Screen Mobile/css/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.doclinks.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.doclinks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.linenumbers.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.linenumbers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.menu.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight-plugin.menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/sunlight.dark.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/sunlight.dark.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/sunlight.default.css" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/styles/sunlight.default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight.javascript.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight.javascript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/sunlight.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/toc.js" afterPath="$PROJECT_DIR$/bower_components/phaser-official/docs/scripts/toc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/phaser-official/resources/zwoptex-phaser.template" afterPath="$PROJECT_DIR$/bower_components/phaser-official/resources/zwoptex-phaser.template" />
+    </list>
     <ignored path="fly-catch.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,21 +703,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game/main.js">
+      <file leaf-file-name="preload.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/states/preload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preload.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/game/states/preload.js">
+      <file leaf-file-name="play_ss.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/play_ss.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43256998" vertical-offset="0" max-vertical-offset="786">
-              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+            <state vertical-scroll-proportion="-15.038462" vertical-offset="51" max-vertical-offset="1105">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/states/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="play.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game/states/play.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6530612" vertical-offset="192" max-vertical-offset="1122">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -57,6 +757,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/config.json" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/assets/menu_ss.json" />
+        <option value="$PROJECT_DIR$/game/states/menu.js" />
+        <option value="$PROJECT_DIR$/game/states/preload.js" />
+        <option value="$PROJECT_DIR$/assets/play_ss.json" />
+        <option value="$PROJECT_DIR$/bower_components/phaser-official/.bower.json" />
+        <option value="$PROJECT_DIR$/bower_components/phaser-official/bower.json" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/dist/js/game.js" />
+        <option value="$PROJECT_DIR$/bower_components/phaser-official/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/game/states/play.js" />
       </list>
     </option>
   </component>
@@ -113,8 +824,27 @@
     <initial>false</initial>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="980" />
+    <option name="width" value="960" />
     <option name="height" value="1052" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -170,7 +900,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -184,11 +914,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="game" />
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="states" />
+              <option name="myItemId" value="phaser-official" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly-catch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fly-catch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,6 +946,9 @@
     <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -217,18 +964,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="980" height="1052" extended-state="0" />
+    <frame x="0" y="0" width="960" height="1052" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15151516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39602926" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1574074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15025906" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -257,9 +1004,43 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game/states/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="629">
+          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="527">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/play.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/menu_ss.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="561">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
@@ -268,17 +1049,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="663">
+          <caret line="12" column="64" selection-start-line="12" selection-start-column="64" selection-end-line="12" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="391">
+          <caret line="9" column="108" selection-start-line="9" selection-start-column="108" selection-end-line="9" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.057142857" vertical-offset="0" max-vertical-offset="595">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="170">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/game/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="621">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -286,8 +1082,149 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/states/preload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43256998" vertical-offset="0" max-vertical-offset="786">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="629">
           <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="629">
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="786">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="786">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2061069" vertical-offset="948" max-vertical-offset="1734">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.086513996" vertical-offset="0" max-vertical-offset="786">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/menu_ss.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="561">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="391">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/_main.js.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="289">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/play_ss.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.038462" vertical-offset="51" max-vertical-offset="1105">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12927757" vertical-offset="0" max-vertical-offset="526">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.096958175" vertical-offset="0" max-vertical-offset="526">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower_components/phaser-official/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8794062" vertical-offset="2091" max-vertical-offset="4692">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/states/play.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6530612" vertical-offset="192" max-vertical-offset="1122">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding />
         </state>
       </provider>
