@@ -15,7 +15,122 @@ window.onload = function () {
 
   game.state.start('boot');
 };
-},{"./states/boot":2,"./states/gameover":3,"./states/menu":4,"./states/play":5,"./states/preload":6}],2:[function(require,module,exports){
+},{"./states/boot":3,"./states/gameover":4,"./states/menu":5,"./states/play":6,"./states/preload":7}],2:[function(require,module,exports){
+'use strict';
+
+var Sachock = function(game, parent, atlasName) {
+	Phaser.Group.call(this, game, parent);
+
+	this.MIN_POLE_SIZE = 70;
+	this.MAX_SPEED = 0.1;
+	this.BASKET_MAX_ROTATION = 0.1 * Phaser.Math.PI2;
+
+	this.events = {};
+	this.events.onComplete = new Phaser.Signal();
+
+	this.poleEnd = this.game.add.sprite(0, 0, atlasName, "sachockPoleBottom");
+	this.poleEnd.anchor.setTo(1, 0.5);
+	this.add(this.poleEnd);
+
+	this.basket = this.game.add.sprite(0, 0, atlasName, "sachockBasket");
+	this.basket.anchor.setTo(0.5, 0);
+	this.add(this.basket);
+
+	this.enterBottom = this.game.add.sprite(0, -15, atlasName, "sachockEnterBottom");
+	this.enterBottom.anchor.setTo(1, 0.5);
+	this.add(this.enterBottom);
+
+	this.enterTop = this.game.add.sprite(0, 0, atlasName, "sachockEnterTop");
+	this.enterTop.anchor.setTo(0, 0.5);
+	this.add(this.enterTop);
+
+	this.enterMiddle = this.game.add.sprite(0, 0, atlasName, "sachockEnterMiddle");
+	this.enterMiddle.anchor.setTo(0, 0.5);
+	this.add(this.enterMiddle);
+
+	this.poleMiddle = this.game.add.sprite(0, 0, atlasName, "sachockPoleMiddle");
+	this.poleMiddle.anchor.setTo(0, 0.5);
+	this.add(this.poleMiddle);
+
+	this.borderBodies = this.game.add.sprite(0, 0);
+	this.parent.add(this.borderBodies);
+	this.game.physics.p2.enableBody(this.borderBodies);
+	this.borderBodies.body.kinematic = true;
+	//this.borderBodies.body.debug = true;
+
+	this.rotateSpeed = 0;
+};
+
+Sachock.prototype = Object.create(Phaser.Group.prototype);
+Sachock.prototype.constructor = Sachock;
+
+Sachock.prototype.update = function() {
+
+	// write your prefab's specific update code here
+	this.timeTillStart -= this.game.time.elapsed;
+	if (this.timeTillStart < 0) {
+		this.speed += this.acc;
+		this.rotation += this.speed;
+		if (this.rotation < -1 * Phaser.Math.PI2) {
+			//this.start(this.size);
+			this.events.onComplete.dispatch(this);
+		}
+		this.basket.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
+		this.basket.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
+	}
+	this.updateBodies();
+};
+
+Sachock.prototype.updateBodies = function() {
+	this.borderBodies.body.x = this.x;
+	this.borderBodies.body.y = this.y;
+	this.borderBodies.body.rotation = this.rotation;
+	//this.borderBodies.body.scale.x = this.scale.x;
+	//this.borderBodies.body.scale.y = this.scale.y;
+};
+
+Sachock.prototype.start = function(size, startPause, speed, acc) {
+	startPause = typeof startPause !== 'undefined' ? startPause : 900;
+	speed = typeof speed !== 'undefined' ? speed : -0.03;
+	acc = typeof acc !== 'undefined' ? acc : -0.001;
+
+	this.size = size;
+	this.speed = speed;
+	this.acc = acc;
+	this.timeTillStart = startPause;
+	this.direction = -1;
+
+	size -= this.MIN_POLE_SIZE;
+	var enterSize = this.game.rnd.integerInRange(0.3 * size, 0.6 * size);
+	var startPos = this.MIN_POLE_SIZE + this.game.rnd.integerInRange(0, size - enterSize);
+	var endPos = startPos + enterSize;
+
+	this.poleEnd.position.setTo(0, 0);
+	this.enterBottom.position.setTo(startPos, 0);
+	this.enterTop.position.setTo(endPos - 23, 0);
+	this.enterMiddle.position.setTo(startPos, 0);
+	this.enterMiddle.scale.x = 1;
+	this.enterMiddle.scale.x = (enterSize - 23) / this.enterMiddle.width;
+	this.poleMiddle.position.setTo(0, 0);
+	this.poleMiddle.scale.x = 1;
+	this.poleMiddle.scale.x = (startPos - this.enterBottom.width) / this.poleMiddle.width;
+	this.basket.scale.setTo(1, 1);
+	this.basket.x = startPos + enterSize * 0.5;
+	this.basket.rotation = 0;
+	this.basketStartScale = this.basket.scale.x = this.basket.scale.y = enterSize / this.basket.width;
+
+	this.borderBodies.body.clearShapes();
+	this.borderBodies.body.addCircle(15, startPos - 10, -14);
+	this.borderBodies.body.addCircle(15, endPos + 10, -14);
+
+	this.rotation = -0.25 * Phaser.Math.PI2;
+
+	this.updateBodies();
+};
+
+module.exports = Sachock;
+
+},{}],3:[function(require,module,exports){
 
 'use strict';
 
@@ -34,7 +149,7 @@ Boot.prototype = {
 
 module.exports = Boot;
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 
 'use strict';
 function GameOver() {}
@@ -62,7 +177,7 @@ GameOver.prototype = {
 };
 module.exports = GameOver;
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 
 'use strict';
 function Menu() {}
@@ -89,69 +204,120 @@ Menu.prototype = {
 
 module.exports = Menu;
 
-},{}],5:[function(require,module,exports){
-
+},{}],6:[function(require,module,exports){
 'use strict';
+
+var Sachock = require("../prefabs/sachock");
+
 function Play() {}
 Play.prototype = {
 	create: function() {
+
 		this.game.world.setBounds(0, 0, this.game.width, this.game.height);
 		this.game.physics.startSystem(Phaser.Physics.P2JS);
 		this.game.physics.p2.restituion = 0.8;
 
-		this.apple = this.game.add.sprite(340, 550, "playAtlas", "apple0");
+		/*this.apple = this.game.add.sprite(340, 550, "playAtlas", "apple0");
 		this.apple.anchor.setTo(0.5, 0.5);
 		this.game.physics.p2.enable(this.apple);
 		this.apple.body.clearShapes();
 		this.appleShape = this.apple.body.addCircle(250);
-		this.apple.body.debug = true;
-		this.haveToUpdate = true;
+		//this.apple.body.debug = true;
 		//this.apple.width = this.apple.height = 250;
 		//this.appleShape.radius = 100;
-		//this.appleShape.updateBoundingRadius();
+		//this.appleShape.updateBoundingRadius();*/
 
-		this.sachockTop = this.game.add.sprite(100, 100, "playAtlas", "sachockEnterTop");
-		this.sachockBottom = this.game.add.sprite(100, 300, "playAtlas", "sachockEnterBottom");
-		this.game.physics.p2.enable([this.sachockTop, this.sachockBottom]);
-		this.sachockTop.body.kinematic = true;
-		this.sachockBottom.body.kinematic = true;
+		this.sachock = new Sachock(this.game, undefined, "playAtlas");
+		this.sachock.x = this.game.width - 60;
+		this.sachock.y = this.game.height * 0.5;
+		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
+		this.sachock.start(this.game.height * 0.5 - 60);
+
+		this.MAX_AIM_R = this.game.width - 60;
+
+		this.aim = this.game.add.sprite(this.sachock.x, this.sachock.y, "playAtlas", "aim");
+		this.aim.anchor.setTo(0.5, 0.5);
+		this.startAim();
+		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
+
+		/*this.testGroup = this.game.add.group();
+		this.testSprite = this.game.add.sprite(0, 0, "playAtlas", "sachockEnterTop");
+		this.game.physics.p2.enableBody(this.testSprite);
+		this.testSprite.body.kinematic = true;
+		this.testSprite.body.debug = true;
+		this.testSprite.body.x = 100;
+		this.testSprite.body.y = 150;
+		this.testGroup.add(this.testSprite);
+		this.testGroup.x = this.game.width * 0.5;
+		this.testGroup.y = this.game.height * 0.5;
+		this.game.add.tween(this.testGroup).to({y:100}, 1000, Phaser.Easing.Cubic.InOut, true, 0, 1000, true);*/
 
 		this.cursors = this.game.input.keyboard.createCursorKeys();
 	},
 	update: function() {
 
-		this.appleShape.radius -= 0.01;
-		this.apple.width -= 0.45;
-		this.apple.height -= 0.45;
-		this.appleShape.updateBoundingRadius();
-		this.apple.body.debugBody.draw();
+		this.aimR += this.aimSpeed;
+		if (this.aimSpeed > 0) {
+			if (this.aimR > this.MAX_AIM_R) {
+				this.aimSpeed *= -1;
+				this.aimR = this.MAX_AIM_R;
+			}
+		}
+		else {
+			if (this.aimR < this.sachock.MIN_POLE_SIZE) {
+				this.aimSpeed *= -1;
+				this.aimR = this.sachock.MIN_POLE_SIZE;
+			}
+		}
+		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 
-		if (this.cursors.left.isDown)
-		{
-			this.apple.body.rotateLeft(80);
-		}
-		else if (this.cursors.right.isDown)
-		{
-			this.apple.body.rotateRight(80);
-		}
-		else
-		{
-			this.apple.body.setZeroRotation();
-		}
+		/*if (this.apple) {
+			this.appleShape.radius -= 0.01;
+			this.apple.width -= 0.45;
+			this.apple.height -= 0.45;
+			//this.appleShape.updateBoundingRadius();
+			//this.apple.body.debugBody.draw();
 
-		if (this.cursors.up.isDown)
-		{
-			this.apple.body.thrust(400);
-		}
-		else if (this.cursors.down.isDown)
-		{
-			this.apple.body.reverse(400);
-		}
+			if (this.cursors.left.isDown) {
+				this.apple.body.rotateLeft(80);
+			}
+			else if (this.cursors.right.isDown) {
+				this.apple.body.rotateRight(80);
+			}
+			else {
+				this.apple.body.setZeroRotation();
+			}
+
+			if (this.cursors.up.isDown) {
+				this.apple.body.thrust(400);
+			}
+			else if (this.cursors.down.isDown) {
+				this.apple.body.reverse(400);
+			}
+		}*/
+	},
+	sachockCompleteHandler: function(sachock) {
+		sachock.start(this.game.height * 0.5 - 60);
+		this.startAim();
+	},
+	positionOnRadius : function(target, center, angle, radius) {
+		target.x = center.x + radius * Math.cos(angle);
+		target.y = center.y + radius * Math.sin(angle);
+	},
+	startAim : function() {
+		this.aimAngle = this.game.rnd.realInRange(0.25, 0.375) * Phaser.Math.PI2;
+		this.aimR = this.sachock.MIN_POLE_SIZE;
+		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
+		this.aimSpeed = 0;
+		this.game.time.events.add(Phaser.Timer.SECOND * 0.5, this.setAimSpeed, this).autoDestroy = true;
+	},
+	setAimSpeed : function() {
+		this.aimSpeed = 6;
 	}
 };
   
   module.exports = Play;
-},{}],6:[function(require,module,exports){
+},{"../prefabs/sachock":2}],7:[function(require,module,exports){
 
 'use strict';
 function Preload() {

@@ -10,50 +10,58 @@
 },
 "sachockBasket":
 {
-	"frame":{"x":503,"y":0,"w":191,"h":317},
+	"frame":{"x":504,"y":0,"w":316,"h":191},
 	"rotated":false,
 	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":191,"y":317},
-	"sourceSize":{"w":191,"h":317}
+	"spriteSourceSize":{"x":0,"y":0,"w":316,"y":191},
+	"sourceSize":{"w":316,"h":191}
+},
+"sachockEnterMiddle":
+{
+	"frame":{"x":504,"y":193,"w":294,"h":58},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":294,"y":58},
+	"sourceSize":{"w":294,"h":58}
 },
 "sachockEnterTop":
 {
-	"frame":{"x":695,"y":0,"w":58,"h":49},
+	"frame":{"x":504,"y":253,"w":51,"h":58},
 	"rotated":false,
 	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":58,"y":49},
-	"sourceSize":{"w":58,"h":49}
-},
-"sachockEnterBottom":
-{
-	"frame":{"x":695,"y":50,"w":58,"h":24},
-	"rotated":false,
-	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":58,"y":24},
-	"sourceSize":{"w":58,"h":24}
-},
-"sachokEnterMiddle":
-{
-	"frame":{"x":754,"y":0,"w":58,"h":12},
-	"rotated":false,
-	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":58,"y":12},
-	"sourceSize":{"w":58,"h":12}
-},
-"sachokPoleBottom":
-{
-	"frame":{"x":754,"y":13,"w":29,"h":15},
-	"rotated":false,
-	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":29,"y":15},
-	"sourceSize":{"w":29,"h":15}
+	"spriteSourceSize":{"x":0,"y":0,"w":51,"y":58},
+	"sourceSize":{"w":51,"h":58}
 },
 "sachockPoleMiddle":
 {
-	"frame":{"x":695,"y":75,"w":29,"h":12},
+	"frame":{"x":557,"y":253,"w":45,"h":29},
 	"rotated":false,
 	"trimmed":false,
-	"spriteSourceSize":{"x":0,"y":0,"w":29,"y":12},
-	"sourceSize":{"w":29,"h":12}
+	"spriteSourceSize":{"x":0,"y":0,"w":45,"y":29},
+	"sourceSize":{"w":45,"h":29}
+},
+"aim":
+{
+	"frame":{"x":504,"y":313,"w":29,"h":29},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":29,"y":29},
+	"sourceSize":{"w":29,"h":29}
+},
+"sachockEnterBottom":
+{
+	"frame":{"x":822,"y":0,"w":25,"h":58},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":25,"y":58},
+	"sourceSize":{"w":25,"h":58}
+},
+"sachockPoleBottom":
+{
+	"frame":{"x":557,"y":284,"w":14,"h":29},
+	"rotated":false,
+	"trimmed":false,
+	"spriteSourceSize":{"x":0,"y":0,"w":14,"y":29},
+	"sourceSize":{"w":14,"h":29}
 }
 }}
