@@ -42,15 +42,14 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.enterFrontRight = this.game.add.sprite(0, -8, atlasName, "basketEnterFrontRight", this.enterFrontGroup);
 	this.enterFrontRight.anchor.setTo(1, 0);
 
-	this.poleMiddle = this.game.add.sprite(0, 0, atlasName, "sachockPoleMiddle");
-	this.poleMiddle.anchor.setTo(0, 0.5);
-	this.add(this.poleMiddle);
+	this.poleMid = this.game.add.sprite(0, 0, atlasName, "sachockPoleMiddle", this);
+	this.poleMid.anchor.setTo(0, 0.5);
 
 	this.borderBodies = this.game.add.sprite(0, 0);
 	this.parent.add(this.borderBodies);
 	this.game.physics.p2.enableBody(this.borderBodies);
 	this.borderBodies.body.kinematic = true;
-	this.borderBodies.body.debug = true;
+	//this.borderBodies.body.debug = true;
 
 	this.rotateSpeed = 0;
 };
@@ -79,6 +78,8 @@ Sachock.prototype.updateBodies = function() {
 	this.borderBodies.body.x = this.x;
 	this.borderBodies.body.y = this.y;
 	this.borderBodies.body.rotation = this.rotation;
+	this.enterBackGroup.position.setTo(this.x, this.y);
+	this.enterBackGroup.rotation = this.rotation;
 	//this.borderBodies.body.scale.x = this.scale.x;
 	//this.borderBodies.body.scale.y = this.scale.y;
 };
@@ -90,7 +91,7 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 
 	this.size = size;
 	this.speed = speed = 0;
-	this.acc = acc = 0;
+	this.acc = acc;
 	this.timeTillStart = startPause;
 	this.direction = -1;
 
@@ -101,10 +102,13 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	var halfSize = enterSize * 0.5;
 
 	this.poleEnd.position.setTo(0, 0);
-	this.enterBackGroup.x = this.basketGroup.x = this.enterFrontGroup.x = startPos + halfSize;
-	this.enterBackLeft.x = this.basketLeft.x = this.enterFrontLeft.x = 0 - halfSize - 11;
-	this.enterBackRight.x = this.basketRight.x = this.enterFrontRight.x = halfSize + 11;
-	this.enterBackMid.x = this.enterFrontMid.x = this.enterBackLeft.x + this.enterBackLeft.width;
+	this.basketGroup.x = this.enterFrontGroup.x = startPos + halfSize;
+	this.basketLeft.x = this.enterFrontLeft.x = 0 - halfSize - 11;
+	this.enterBackLeft.x = startPos - 11;
+	this.basketRight.x = this.enterFrontRight.x = halfSize + 11;
+	this.enterBackRight.x = endPos + 11;
+	this.enterFrontMid.x = this.enterFrontLeft.x + this.enterFrontLeft.width;
+	this.enterBackMid.x = this.enterBackLeft.x + this.enterBackLeft.width;
 	this.enterBackMid.scale.x = this.enterFrontMid.scale.x = 1;
 	this.enterBackMid.scale.x = this.enterFrontMid.scale.x = ((this.enterBackRight.x - this.enterBackRight.width) - (this.enterBackLeft.x + this.enterBackLeft.width)) / this.enterBackMid.width;
 	this.basketMid.x = this.basketLeft.x + this.basketLeft.width;
@@ -113,6 +117,9 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basketStartScale = 1;
 	this.basketGroup.rotation = 0;
 	this.basketGroup.scale.y = 1;
+	this.poleMid.scale.x = 1;
+	this.poleMid.scale.x = startPos / this.poleMid.width;
+
 
 	/*this.enterBottom.position.setTo(startPos, 0);
 	this.enterTop.position.setTo(endPos - 23, 0);
