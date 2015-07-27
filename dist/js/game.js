@@ -18,7 +18,7 @@ window.onload = function () {
 },{"./states/boot":3,"./states/gameover":4,"./states/menu":5,"./states/play":6,"./states/preload":7}],2:[function(require,module,exports){
 'use strict';
 
-var Sachock = function(game, parent, atlasName) {
+var Sachock = function(game, parent, atlasName, backContainer) {
 	Phaser.Group.call(this, game, parent);
 
 	this.MIN_POLE_SIZE = 70;
@@ -29,24 +29,36 @@ var Sachock = function(game, parent, atlasName) {
 	this.events.onComplete = new Phaser.Signal();
 
 	this.poleEnd = this.game.add.sprite(0, 0, atlasName, "sachockPoleBottom");
-	this.poleEnd.anchor.setTo(1, 0.5);
+	this.poleEnd.anchor.setTo(0.5, 0.5);
 	this.add(this.poleEnd);
 
-	this.basket = this.game.add.sprite(0, 0, atlasName, "sachockBasket");
-	this.basket.anchor.setTo(0.5, 0);
-	this.add(this.basket);
+	this.enterBackGroup = this.game.add.group(backContainer);
+	this.basketGroup = this.game.add.group(this);
+	this.enterFrontGroup = this.game.add.group(this);
 
-	this.enterBottom = this.game.add.sprite(0, -15, atlasName, "sachockEnterBottom");
-	this.enterBottom.anchor.setTo(1, 0.5);
-	this.add(this.enterBottom);
+	//Задняя часть входа в корзину
+	this.enterBackLeft = this.game.add.sprite(0, 0, atlasName, "basketEnterBackLeft", this.enterBackGroup);
+	this.enterBackLeft.anchor.setTo(0, 0.5);
+	this.enterBackMid = this.game.add.sprite(0, 0, atlasName, "basketEnterBackMid", this.enterBackGroup);
+	this.enterBackMid.anchor.setTo(0, 0.5);
+	this.enterBackRight = this.game.add.sprite(0, 0, atlasName, "basketEnterBackRight", this.enterBackGroup);
+	this.enterBackRight.anchor.setTo(1, 0.5);
 
-	this.enterTop = this.game.add.sprite(0, 0, atlasName, "sachockEnterTop");
-	this.enterTop.anchor.setTo(0, 0.5);
-	this.add(this.enterTop);
+	//Корзина
+	this.basketLeft = this.game.add.sprite(0, -2, atlasName, "basketLeft", this.basketGroup);
+	this.basketLeft.anchor.setTo(0, 0);
+	this.basketMid = this.game.add.sprite(0, -2, atlasName, "basketMid", this.basketGroup);
+	this.basketMid.anchor.setTo(0, 0);
+	this.basketRight = this.game.add.sprite(0, -2, atlasName, "basketRight", this.basketGroup);
+	this.basketRight.anchor.setTo(1, 0);
 
-	this.enterMiddle = this.game.add.sprite(0, 0, atlasName, "sachockEnterMiddle");
-	this.enterMiddle.anchor.setTo(0, 0.5);
-	this.add(this.enterMiddle);
+	//Передняя часть входа в корзину
+	this.enterFrontLeft = this.game.add.sprite(0, -8, atlasName, "basketEnterFrontLeft", this.enterFrontGroup);
+	this.enterFrontLeft.anchor.setTo(0, 0);
+	this.enterFrontMid = this.game.add.sprite(0, -8, atlasName, "basketEnterFrontMid", this.enterFrontGroup);
+	this.enterFrontMid.anchor.setTo(0, 0);
+	this.enterFrontRight = this.game.add.sprite(0, -8, atlasName, "basketEnterFrontRight", this.enterFrontGroup);
+	this.enterFrontRight.anchor.setTo(1, 0);
 
 	this.poleMiddle = this.game.add.sprite(0, 0, atlasName, "sachockPoleMiddle");
 	this.poleMiddle.anchor.setTo(0, 0.5);
@@ -56,7 +68,7 @@ var Sachock = function(game, parent, atlasName) {
 	this.parent.add(this.borderBodies);
 	this.game.physics.p2.enableBody(this.borderBodies);
 	this.borderBodies.body.kinematic = true;
-	//this.borderBodies.body.debug = true;
+	this.borderBodies.body.debug = true;
 
 	this.rotateSpeed = 0;
 };
@@ -75,8 +87,8 @@ Sachock.prototype.update = function() {
 			//this.start(this.size);
 			this.events.onComplete.dispatch(this);
 		}
-		this.basket.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
-		this.basket.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
+		this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
+		this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
 	}
 	this.updateBodies();
 };
@@ -95,8 +107,8 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	acc = typeof acc !== 'undefined' ? acc : -0.001;
 
 	this.size = size;
-	this.speed = speed;
-	this.acc = acc;
+	this.speed = speed = 0;
+	this.acc = acc = 0;
 	this.timeTillStart = startPause;
 	this.direction = -1;
 
@@ -104,9 +116,23 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	var enterSize = this.game.rnd.integerInRange(0.3 * size, 0.6 * size);
 	var startPos = this.MIN_POLE_SIZE + this.game.rnd.integerInRange(0, size - enterSize);
 	var endPos = startPos + enterSize;
+	var halfSize = enterSize * 0.5;
 
 	this.poleEnd.position.setTo(0, 0);
-	this.enterBottom.position.setTo(startPos, 0);
+	this.enterBackGroup.x = this.basketGroup.x = this.enterFrontGroup.x = startPos + halfSize;
+	this.enterBackLeft.x = this.basketLeft.x = this.enterFrontLeft.x = 0 - halfSize - 11;
+	this.enterBackRight.x = this.basketRight.x = this.enterFrontRight.x = halfSize + 11;
+	this.enterBackMid.x = this.enterFrontMid.x = this.enterBackLeft.x + this.enterBackLeft.width;
+	this.enterBackMid.scale.x = this.enterFrontMid.scale.x = 1;
+	this.enterBackMid.scale.x = this.enterFrontMid.scale.x = ((this.enterBackRight.x - this.enterBackRight.width) - (this.enterBackLeft.x + this.enterBackLeft.width)) / this.enterBackMid.width;
+	this.basketMid.x = this.basketLeft.x + this.basketLeft.width;
+	this.basketMid.scale.x = 1;
+	this.basketMid.scale.x = ((this.basketRight.x - this.basketRight.width) - (this.basketLeft.x + this.basketLeft.width)) / this.basketMid.width;
+	this.basketStartScale = 1;
+	this.basketGroup.rotation = 0;
+	this.basketGroup.scale.y = 1;
+
+	/*this.enterBottom.position.setTo(startPos, 0);
 	this.enterTop.position.setTo(endPos - 23, 0);
 	this.enterMiddle.position.setTo(startPos, 0);
 	this.enterMiddle.scale.x = 1;
@@ -117,11 +143,11 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basket.scale.setTo(1, 1);
 	this.basket.x = startPos + enterSize * 0.5;
 	this.basket.rotation = 0;
-	this.basketStartScale = this.basket.scale.x = this.basket.scale.y = enterSize / this.basket.width;
+	this.basketStartScale = this.basket.scale.x = this.basket.scale.y = enterSize / this.basket.width;*/
 
 	this.borderBodies.body.clearShapes();
-	this.borderBodies.body.addCircle(15, startPos - 10, -14);
-	this.borderBodies.body.addCircle(15, endPos + 10, -14);
+	this.borderBodies.body.addCircle(6, startPos - 6, 0);
+	this.borderBodies.body.addCircle(6, endPos + 6, 0);
 
 	this.rotation = -0.25 * Phaser.Math.PI2;
 
@@ -227,7 +253,11 @@ Play.prototype = {
 		//this.appleShape.radius = 100;
 		//this.appleShape.updateBoundingRadius();*/
 
-		this.sachock = new Sachock(this.game, undefined, "playAtlas");
+		this.sachockBackContainer = this.game.add.group();
+		this.appleContainer = this.game.add.group();
+		this.sachockFrontContainer = this.game.add.group();
+
+		this.sachock = new Sachock(this.game, this.sachockFrontContainer, "playAtlas", this.sachockBackContainer);
 		this.sachock.x = this.game.width - 60;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
@@ -237,6 +267,7 @@ Play.prototype = {
 
 		this.aim = this.game.add.sprite(this.sachock.x, this.sachock.y, "playAtlas", "aim");
 		this.aim.anchor.setTo(0.5, 0.5);
+		this.appleContainer.add(this.aim);
 		this.startAim();
 		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 

@@ -20,7 +20,11 @@ Play.prototype = {
 		//this.appleShape.radius = 100;
 		//this.appleShape.updateBoundingRadius();*/
 
-		this.sachock = new Sachock(this.game, undefined, "playAtlas");
+		this.sachockBackContainer = this.game.add.group();
+		this.appleContainer = this.game.add.group();
+		this.sachockFrontContainer = this.game.add.group();
+
+		this.sachock = new Sachock(this.game, this.sachockFrontContainer, "playAtlas", this.sachockBackContainer);
 		this.sachock.x = this.game.width - 60;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
@@ -30,6 +34,7 @@ Play.prototype = {
 
 		this.aim = this.game.add.sprite(this.sachock.x, this.sachock.y, "playAtlas", "aim");
 		this.aim.anchor.setTo(0.5, 0.5);
+		this.appleContainer.add(this.aim);
 		this.startAim();
 		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 
