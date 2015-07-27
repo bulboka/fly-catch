@@ -49,7 +49,7 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.parent.add(this.borderBodies);
 	this.game.physics.p2.enableBody(this.borderBodies);
 	this.borderBodies.body.kinematic = true;
-	//this.borderBodies.body.debug = true;
+	this.borderBodies.body.debug = true;
 
 	this.rotateSpeed = 0;
 };
@@ -90,7 +90,7 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	acc = typeof acc !== 'undefined' ? acc : -0.001;
 
 	this.size = size;
-	this.speed = speed = 0;
+	this.speed = speed;
 	this.acc = acc;
 	this.timeTillStart = startPause;
 	this.direction = -1;
@@ -137,6 +137,9 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.borderBodies.body.clearShapes();
 	this.borderBodies.body.addCircle(6, startPos - 6, 0);
 	this.borderBodies.body.addCircle(6, endPos + 6, 0);
+	this.borderBodies.body.addRectangle(12, this.basketMid.height, startPos - 6, this.basketMid.height * 0.5);
+	this.borderBodies.body.addRectangle(12, this.basketMid.height, endPos + 6, this.basketMid.height * 0.5);
+	this.borderBodies.body.addRectangle(enterSize, 12, startPos + enterSize * 0.5, this.basketMid.height);
 
 	this.rotation = -0.25 * Phaser.Math.PI2;
 
