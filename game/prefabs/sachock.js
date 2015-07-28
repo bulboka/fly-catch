@@ -4,11 +4,12 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	Phaser.Group.call(this, game, parent);
 
 	this.MIN_POLE_SIZE = 200;
-	this.MAX_SPEED = 0.1;
+	this.MAX_SPEED = 10;
 	this.BASKET_MAX_ROTATION = 0.1 * Phaser.Math.PI2;
 
 	this.events = {};
 	this.events.onComplete = new Phaser.Signal();
+	this.events.onPassedMiddle = new Phaser.Signal();
 
 	this.poleEnd = this.game.add.sprite(0, 0, atlasName, "sachockPoleBottom");
 	this.poleEnd.anchor.setTo(0.5, 0.5);
@@ -52,6 +53,8 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.borderBodies.body.kinematic = true;
 	this.borderBodies.body.debug = false;
 
+	this.slowDownAcc = 3.5;
+
 	/*this.borderLeftBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderRightBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderBottomBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
@@ -70,13 +73,27 @@ Sachock.prototype.constructor = Sachock;
 Sachock.prototype.update = function() {
 	//this.speed += this.acc * this.game.time.elapsed / 1000;
 	//this.rotation += this.speed * this.game.time.elapsed / 1000;
-	this.borderBodies.body.angularVelocity += this.angAcc * this.game.time.elapsed / 1000;
+	if (!this.passedMiddle && this.rotation < -0.75 * Phaser.Math.PI2) {
+		this.passedMiddle = true;
+		this.game.physics.p2.gravity.y = 1200;
+		this.events.onPassedMiddle.dispatch(this);
+	}
+	if (this.passedMiddle) {
+		this.borderBodies.body.angularVelocity += this.slowDownAcc * this.game.time.elapsed / 1000;
+		if (this.borderBodies.body.angularVelocity > -0.2) {
+			this.borderBodies.body.angularVelocity = -0.2;
+		}
+		console.log(this.borderBodies.body.angularVelocity);
+	}
+	else {
+		this.borderBodies.body.angularVelocity += this.angAcc * this.game.time.elapsed / 1000;
+	}
 	if (this.rotation < -1 * Phaser.Math.PI2) {
 		this.borderBodies.body.angularVelocity = 0;
 		this.events.onComplete.dispatch(this);
 	}
-	//this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
-	//this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
+	this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.borderBodies.body.angularVelocity / this.MAX_SPEED));
+	this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.borderBodies.body.angularVelocity) - 0.03, 0) / this.MAX_SPEED);
 	this.updateBodies();
 };
 
@@ -129,6 +146,9 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basketGroup.scale.y = 1;
 	this.poleMid.scale.x = 1;
 	this.poleMid.scale.x = startPos / this.poleMid.width;
+
+	this.passedMiddle = false;
+	this.game.physics.p2.gravity.y = 0;
 
 	this.game.time.events.add(startPause, this.startRotation, this).autoDestroy = true;
 
@@ -184,6 +204,11 @@ Sachock.prototype.startRotation = function() {
 	}*/
 	this.borderBodies.body.angularVelocity = this.game.physics.p2.pxm(this.speed);
 	this.angAcc = this.acc;
+};
+
+Sachock.prototype.stop = function() {
+	this.borderBodies.body.angularVelocity = 0;
+	this.angAcc = 0;
 };
 
 module.exports = Sachock;

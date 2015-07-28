@@ -22,11 +22,12 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	Phaser.Group.call(this, game, parent);
 
 	this.MIN_POLE_SIZE = 200;
-	this.MAX_SPEED = 0.1;
+	this.MAX_SPEED = 10;
 	this.BASKET_MAX_ROTATION = 0.1 * Phaser.Math.PI2;
 
 	this.events = {};
 	this.events.onComplete = new Phaser.Signal();
+	this.events.onPassedMiddle = new Phaser.Signal();
 
 	this.poleEnd = this.game.add.sprite(0, 0, atlasName, "sachockPoleBottom");
 	this.poleEnd.anchor.setTo(0.5, 0.5);
@@ -70,6 +71,8 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.borderBodies.body.kinematic = true;
 	this.borderBodies.body.debug = false;
 
+	this.slowDownAcc = 3.5;
+
 	/*this.borderLeftBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderRightBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderBottomBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
@@ -88,13 +91,27 @@ Sachock.prototype.constructor = Sachock;
 Sachock.prototype.update = function() {
 	//this.speed += this.acc * this.game.time.elapsed / 1000;
 	//this.rotation += this.speed * this.game.time.elapsed / 1000;
-	this.borderBodies.body.angularVelocity += this.angAcc * this.game.time.elapsed / 1000;
+	if (!this.passedMiddle && this.rotation < -0.75 * Phaser.Math.PI2) {
+		this.passedMiddle = true;
+		this.game.physics.p2.gravity.y = 1200;
+		this.events.onPassedMiddle.dispatch(this);
+	}
+	if (this.passedMiddle) {
+		this.borderBodies.body.angularVelocity += this.slowDownAcc * this.game.time.elapsed / 1000;
+		if (this.borderBodies.body.angularVelocity > -0.2) {
+			this.borderBodies.body.angularVelocity = -0.2;
+		}
+		console.log(this.borderBodies.body.angularVelocity);
+	}
+	else {
+		this.borderBodies.body.angularVelocity += this.angAcc * this.game.time.elapsed / 1000;
+	}
 	if (this.rotation < -1 * Phaser.Math.PI2) {
 		this.borderBodies.body.angularVelocity = 0;
 		this.events.onComplete.dispatch(this);
 	}
-	//this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
-	//this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
+	this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.borderBodies.body.angularVelocity / this.MAX_SPEED));
+	this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.borderBodies.body.angularVelocity) - 0.03, 0) / this.MAX_SPEED);
 	this.updateBodies();
 };
 
@@ -147,6 +164,9 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basketGroup.scale.y = 1;
 	this.poleMid.scale.x = 1;
 	this.poleMid.scale.x = startPos / this.poleMid.width;
+
+	this.passedMiddle = false;
+	this.game.physics.p2.gravity.y = 0;
 
 	this.game.time.events.add(startPause, this.startRotation, this).autoDestroy = true;
 
@@ -202,6 +222,11 @@ Sachock.prototype.startRotation = function() {
 	}*/
 	this.borderBodies.body.angularVelocity = this.game.physics.p2.pxm(this.speed);
 	this.angAcc = this.acc;
+};
+
+Sachock.prototype.stop = function() {
+	this.borderBodies.body.angularVelocity = 0;
+	this.angAcc = 0;
 };
 
 module.exports = Sachock;
@@ -302,9 +327,10 @@ Play.prototype = {
 		this.sachockFrontContainer = this.game.add.group();
 
 		this.sachock = new Sachock(this.game, this.sachockFrontContainer, "playAtlas", this.sachockBackContainer);
-		this.sachock.x = this.game.width - 60;
+		this.sachock.x = this.game.width - 110;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
+		this.sachock.events.onPassedMiddle.add(this.sachockPassedMiddleHandler, this);
 		this.sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 
 		this.MAX_AIM_R = this.game.width - 60;
@@ -322,6 +348,7 @@ Play.prototype = {
 		if (this.creatingApple) {
 			if (this.game.input.mousePointer.isUp) {
 				this.creatingApple = false;
+				this.game.physics.p2.gravity.y = 150;
 			}
 			else {
 				this.apple.height = this.apple.width = this.apple.width + 4;
@@ -362,6 +389,12 @@ Play.prototype = {
 		}
 	},
 	sachockCompleteHandler: function(sachock) {
+		this.game.camera.follow(null);
+		this.sachock.stop();
+		this.game.time.events.add(Phaser.Timer.SECOND * 3, this.startSachock, this).autoDestroy = true;
+	},
+	startSachock: function() {
+		this.game.camera.x = 0;
 		this.removeApple();
 		sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 		this.startAim();
@@ -389,9 +422,13 @@ Play.prototype = {
 		this.apple.position.setTo(x, y);
 		this.appleContainer.add(this.apple);
 		this.game.physics.p2.enable(this.apple);
+		//this.apple.body.mass = 2000;
 		this.apple.body.clearShapes();
 		this.appleShape = this.apple.body.addCircle(this.apple.width * 0.5);
 		this.apple.body.debug = false;
+		this.game.camera.follow(this.apple);
+		var cameraBorder = this.game.width * 0.2;
+		this.game.camera.deadzone = new Phaser.Rectangle(cameraBorder, -this.game.height, this.game.width - cameraBorder * 2, this.game.height * 3);
 	},
 	removeApple : function() {
 		if (this.apple) {
@@ -401,6 +438,11 @@ Play.prototype = {
 			this.appleShape = null;
 			this.appleContainer.remove(this.apple);
 		}
+	},
+	sachockPassedMiddleHandler : function(sachock) {
+		//this.game.camera.x = 400;
+		/*this.game.add.tween(this.game.camera)
+			.to({x:300}, 2000, Phaser.Easing.Cubic.InOut);*/
 	}
 };
   

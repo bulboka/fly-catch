@@ -19,9 +19,10 @@ Play.prototype = {
 		this.sachockFrontContainer = this.game.add.group();
 
 		this.sachock = new Sachock(this.game, this.sachockFrontContainer, "playAtlas", this.sachockBackContainer);
-		this.sachock.x = this.game.width - 60;
+		this.sachock.x = this.game.width - 110;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
+		this.sachock.events.onPassedMiddle.add(this.sachockPassedMiddleHandler, this);
 		this.sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 
 		this.MAX_AIM_R = this.game.width - 60;
@@ -39,6 +40,7 @@ Play.prototype = {
 		if (this.creatingApple) {
 			if (this.game.input.mousePointer.isUp) {
 				this.creatingApple = false;
+				this.game.physics.p2.gravity.y = 150;
 			}
 			else {
 				this.apple.height = this.apple.width = this.apple.width + 4;
@@ -79,6 +81,12 @@ Play.prototype = {
 		}
 	},
 	sachockCompleteHandler: function(sachock) {
+		this.game.camera.follow(null);
+		this.sachock.stop();
+		this.game.time.events.add(Phaser.Timer.SECOND * 3, this.startSachock, this).autoDestroy = true;
+	},
+	startSachock: function() {
+		this.game.camera.x = 0;
 		this.removeApple();
 		sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 		this.startAim();
@@ -106,9 +114,13 @@ Play.prototype = {
 		this.apple.position.setTo(x, y);
 		this.appleContainer.add(this.apple);
 		this.game.physics.p2.enable(this.apple);
+		//this.apple.body.mass = 2000;
 		this.apple.body.clearShapes();
 		this.appleShape = this.apple.body.addCircle(this.apple.width * 0.5);
 		this.apple.body.debug = false;
+		this.game.camera.follow(this.apple);
+		var cameraBorder = this.game.width * 0.2;
+		this.game.camera.deadzone = new Phaser.Rectangle(cameraBorder, -this.game.height, this.game.width - cameraBorder * 2, this.game.height * 3);
 	},
 	removeApple : function() {
 		if (this.apple) {
@@ -118,6 +130,11 @@ Play.prototype = {
 			this.appleShape = null;
 			this.appleContainer.remove(this.apple);
 		}
+	},
+	sachockPassedMiddleHandler : function(sachock) {
+		//this.game.camera.x = 400;
+		/*this.game.add.tween(this.game.camera)
+			.to({x:300}, 2000, Phaser.Easing.Cubic.InOut);*/
 	}
 };
   
