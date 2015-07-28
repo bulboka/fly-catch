@@ -22,7 +22,7 @@ Play.prototype = {
 		this.sachock.x = this.game.width - 60;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
-		this.sachock.start(this.game.height * 0.5 - 60, 1000, -20, -3);
+		this.sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 
 		this.MAX_AIM_R = this.game.width - 60;
 		this.MIN_AIM_R = 30;
@@ -70,9 +70,9 @@ Play.prototype = {
 				}
 			}
 			else {
-				if (this.aimR < this.sachock.MIN_POLE_SIZE) {
+				if (this.aimR < this.MIN_AIM_R) {
 					this.aimSpeed *= -1;
-					this.aimR = this.sachock.MIN_POLE_SIZE;
+					this.aimR = this.MIN_AIM_R;
 				}
 			}
 			this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
@@ -80,7 +80,7 @@ Play.prototype = {
 	},
 	sachockCompleteHandler: function(sachock) {
 		this.removeApple();
-		sachock.start(this.game.height * 0.5 - 60, 1000, -20, -3);
+		sachock.start(this.game.height * 0.5 - 60, 1000, 0, -1.5);
 		this.startAim();
 	},
 	positionOnRadius : function(target, center, angle, radius) {
@@ -89,8 +89,8 @@ Play.prototype = {
 	},
 	startAim : function() {
 		this.aim.scale.setTo(1, 1);
-		this.aimAngle = this.game.rnd.realInRange(0.25, 0.375) * Phaser.Math.PI2;
-		this.aimR = 30;
+		this.aimAngle = this.game.rnd.realInRange(0.3, 0.4) * Phaser.Math.PI2;
+		this.aimR = this.MIN_AIM_R;
 		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 		this.aimSpeed = 0;
 		this.game.time.events.add(Phaser.Timer.SECOND * 0.5, this.setAimSpeed, this).autoDestroy = true;

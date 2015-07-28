@@ -46,16 +46,21 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.poleMid.anchor.setTo(0, 0.5);
 
 	//Создание физических тел сетки сачка
-	this.borderLeftBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
+	this.borderBodies = this.game.add.sprite(0, 0);
+	this.parent.add(this.borderBodies);
+	this.game.physics.p2.enableBody(this.borderBodies);
+	this.borderBodies.body.kinematic = true;
+	this.borderBodies.body.debug = false;
+
+	/*this.borderLeftBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderRightBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderBottomBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
 	this.borderBodies = [this.borderLeftBody, this.borderRightBody, this.borderBottomBody];
-
 	this.game.physics.p2.enable(this.borderBodies);
 	for (var i = 0; i < this.borderBodies.length; i++) {
 		this.borderBodies[i].body.kinematic = true;
 		this.borderBodies[i].body.debug = false;
-	}
+	}*/
 
 };
 
@@ -65,8 +70,9 @@ Sachock.prototype.constructor = Sachock;
 Sachock.prototype.update = function() {
 	//this.speed += this.acc * this.game.time.elapsed / 1000;
 	//this.rotation += this.speed * this.game.time.elapsed / 1000;
-	this.rotation = this.borderLeftBody.body.rotation;
+	this.borderBodies.body.angularVelocity += this.angAcc * this.game.time.elapsed / 1000;
 	if (this.rotation < -1 * Phaser.Math.PI2) {
+		this.borderBodies.body.angularVelocity = 0;
 		this.events.onComplete.dispatch(this);
 	}
 	//this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
@@ -80,6 +86,9 @@ Sachock.prototype.updateBodies = function() {
 		this.borderBodies[i].body.y = this.y;
 		this.borderBodies[i].body.rotation = this.rotation;
 	}*/
+	this.borderBodies.body.x = this.x;
+	this.borderBodies.body.y = this.y;
+	this.rotation = this.borderBodies.body.rotation;
 	this.enterBackGroup.position.setTo(this.x, this.y);
 	this.enterBackGroup.rotation = this.rotation;
 };
@@ -92,7 +101,7 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.size = size;
 	this.speed = speed;
 	this.acc = acc;
-	this.timeTillStart = startPause;
+	this.startPause = startPause;
 	this.direction = -1;
 
 	this.MIN_POLE_SIZE = size * 0.5;
@@ -136,31 +145,45 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basket.rotation = 0;
 	this.basketStartScale = this.basket.scale.x = this.basket.scale.y = enterSize / this.basket.width;*/
 
+	//this.rotation = -0.25 * Phaser.Math.PI2;
+
 	var bordersWidth = 20;
 	var halfBordersWidth = bordersWidth * 0.5;
-	this.borderLeftBody.body.clearShapes();
+
+	/*this.borderLeftBody.body.clearShapes();
 	this.borderLeftBody.body.addCapsule(this.basketMid.height, halfBordersWidth, startPos - halfBordersWidth, this.basketMid.height * 0.5, Phaser.Math.PI2 * 0.25);
 	this.borderRightBody.body.clearShapes();
 	this.borderRightBody.body.addCapsule(this.basketMid.height, halfBordersWidth, endPos + halfBordersWidth, this.basketMid.height * 0.5, Phaser.Math.PI2 * 0.25);
 	this.borderBottomBody.body.clearShapes();
 	this.borderBottomBody.body.addRectangle(enterSize, bordersWidth, startPos + enterSize * 0.5, this.basketMid.height);
 
-	this.rotation = -0.25 * Phaser.Math.PI2;
 	for (var i = 0; i < this.borderBodies.length; i++) {
 		this.borderBodies[i].body.x = this.x;
 		this.borderBodies[i].body.y = this.y;
 		this.borderBodies[i].body.rotation = this.rotation;
 		//this.borderBodies[i].body.rotateRight(this.speed / Math.PI * 180);
-	}
+	}*/
+
+	this.borderBodies.body.clearShapes();
+	this.borderBodies.body.addCircle(halfBordersWidth, startPos - halfBordersWidth, 0);
+	this.borderBodies.body.addCircle(halfBordersWidth, endPos + halfBordersWidth, 0);
+	this.borderBodies.body.addRectangle(bordersWidth, this.basketMid.height, startPos - halfBordersWidth, this.basketMid.height * 0.5);
+	this.borderBodies.body.addRectangle(bordersWidth, this.basketMid.height, endPos + halfBordersWidth, this.basketMid.height * 0.5);
+	this.borderBodies.body.addRectangle(enterSize, bordersWidth, startPos + enterSize * 0.5, this.basketMid.height);
+	this.borderBodies.body.rotation = -0.25 * Phaser.Math.PI2;
+	this.borderBodies.body.angularVelocity = 0;
+	this.angAcc = 0;
 
 	this.updateBodies();
 };
 
 Sachock.prototype.startRotation = function() {
-	for (var i = 0; i < this.borderBodies.length; i++) {
+	/*for (var i = 0; i < this.borderBodies.length; i++) {
 		this.borderBodies[i].body.angularVelocity = this.game.physics.p2.pxm(this.speed);
 		this.borderBodies[i].body.angularForce = this.acc;
-	}
+	}*/
+	this.borderBodies.body.angularVelocity = this.game.physics.p2.pxm(this.speed);
+	this.angAcc = this.acc;
 };
 
 module.exports = Sachock;
