@@ -348,7 +348,7 @@ Play.prototype = {
 		if (this.creatingApple) {
 			if (this.game.input.mousePointer.isUp) {
 				this.creatingApple = false;
-				this.game.physics.p2.gravity.y = 150;
+				this.game.physics.p2.gravity.y = 100;
 			}
 			else {
 				this.apple.height = this.apple.width = this.apple.width + 4;
@@ -422,6 +422,7 @@ Play.prototype = {
 		this.apple.position.setTo(x, y);
 		this.appleContainer.add(this.apple);
 		this.game.physics.p2.enable(this.apple);
+		this.apple.body.angularVelocity = 3;
 		//this.apple.body.mass = 2000;
 		this.apple.body.clearShapes();
 		this.appleShape = this.apple.body.addCircle(this.apple.width * 0.5);
