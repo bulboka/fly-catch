@@ -21,7 +21,7 @@ window.onload = function () {
 var Sachock = function(game, parent, atlasName, backContainer) {
 	Phaser.Group.call(this, game, parent);
 
-	this.MIN_POLE_SIZE = 70;
+	this.MIN_POLE_SIZE = 200;
 	this.MAX_SPEED = 0.1;
 	this.BASKET_MAX_ROTATION = 0.1 * Phaser.Math.PI2;
 
@@ -63,43 +63,43 @@ var Sachock = function(game, parent, atlasName, backContainer) {
 	this.poleMid = this.game.add.sprite(0, 0, atlasName, "sachockPoleMiddle", this);
 	this.poleMid.anchor.setTo(0, 0.5);
 
-	this.borderBodies = this.game.add.sprite(0, 0);
-	this.parent.add(this.borderBodies);
-	this.game.physics.p2.enableBody(this.borderBodies);
-	this.borderBodies.body.kinematic = true;
-	this.borderBodies.body.debug = true;
+	//Создание физических тел сетки сачка
+	this.borderLeftBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
+	this.borderRightBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
+	this.borderBottomBody = this.game.add.sprite(0, 0, undefined, undefined, this.parent);
+	this.borderBodies = [this.borderLeftBody, this.borderRightBody, this.borderBottomBody];
 
-	this.rotateSpeed = 0;
+	this.game.physics.p2.enable(this.borderBodies);
+	for (var i = 0; i < this.borderBodies.length; i++) {
+		this.borderBodies[i].body.kinematic = true;
+		this.borderBodies[i].body.debug = false;
+	}
+
 };
 
 Sachock.prototype = Object.create(Phaser.Group.prototype);
 Sachock.prototype.constructor = Sachock;
 
 Sachock.prototype.update = function() {
-
-	// write your prefab's specific update code here
-	this.timeTillStart -= this.game.time.elapsed;
-	if (this.timeTillStart < 0) {
-		this.speed += this.acc;
-		this.rotation += this.speed;
-		if (this.rotation < -1 * Phaser.Math.PI2) {
-			//this.start(this.size);
-			this.events.onComplete.dispatch(this);
-		}
-		this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
-		this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
+	//this.speed += this.acc * this.game.time.elapsed / 1000;
+	//this.rotation += this.speed * this.game.time.elapsed / 1000;
+	this.rotation = this.borderLeftBody.body.rotation;
+	if (this.rotation < -1 * Phaser.Math.PI2) {
+		this.events.onComplete.dispatch(this);
 	}
+	//this.basketGroup.scale.y = this.basketStartScale * (1 + Math.abs(1 * this.speed / this.MAX_SPEED));
+	//this.basketGroup.rotation = 0 + this.BASKET_MAX_ROTATION * (Math.max(Math.abs(this.speed) - 0.03, 0) / this.MAX_SPEED);
 	this.updateBodies();
 };
 
 Sachock.prototype.updateBodies = function() {
-	this.borderBodies.body.x = this.x;
-	this.borderBodies.body.y = this.y;
-	this.borderBodies.body.rotation = this.rotation;
+	/*for (var i = 0; i < this.borderBodies.length; i++) {
+		this.borderBodies[i].body.x = this.x;
+		this.borderBodies[i].body.y = this.y;
+		this.borderBodies[i].body.rotation = this.rotation;
+	}*/
 	this.enterBackGroup.position.setTo(this.x, this.y);
 	this.enterBackGroup.rotation = this.rotation;
-	//this.borderBodies.body.scale.x = this.scale.x;
-	//this.borderBodies.body.scale.y = this.scale.y;
 };
 
 Sachock.prototype.start = function(size, startPause, speed, acc) {
@@ -113,8 +113,9 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.timeTillStart = startPause;
 	this.direction = -1;
 
+	this.MIN_POLE_SIZE = size * 0.5;
 	size -= this.MIN_POLE_SIZE;
-	var enterSize = this.game.rnd.integerInRange(0.3 * size, 0.6 * size);
+	var enterSize = this.game.rnd.integerInRange(0.4 * size, 0.6 * size);
 	var startPos = this.MIN_POLE_SIZE + this.game.rnd.integerInRange(0, size - enterSize);
 	var endPos = startPos + enterSize;
 	var halfSize = enterSize * 0.5;
@@ -138,6 +139,7 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.poleMid.scale.x = 1;
 	this.poleMid.scale.x = startPos / this.poleMid.width;
 
+	this.game.time.events.add(startPause, this.startRotation, this).autoDestroy = true;
 
 	/*this.enterBottom.position.setTo(startPos, 0);
 	this.enterTop.position.setTo(endPos - 23, 0);
@@ -152,16 +154,31 @@ Sachock.prototype.start = function(size, startPause, speed, acc) {
 	this.basket.rotation = 0;
 	this.basketStartScale = this.basket.scale.x = this.basket.scale.y = enterSize / this.basket.width;*/
 
-	this.borderBodies.body.clearShapes();
-	this.borderBodies.body.addCircle(6, startPos - 6, 0);
-	this.borderBodies.body.addCircle(6, endPos + 6, 0);
-	this.borderBodies.body.addRectangle(12, this.basketMid.height, startPos - 6, this.basketMid.height * 0.5);
-	this.borderBodies.body.addRectangle(12, this.basketMid.height, endPos + 6, this.basketMid.height * 0.5);
-	this.borderBodies.body.addRectangle(enterSize, 12, startPos + enterSize * 0.5, this.basketMid.height);
+	var bordersWidth = 20;
+	var halfBordersWidth = bordersWidth * 0.5;
+	this.borderLeftBody.body.clearShapes();
+	this.borderLeftBody.body.addCapsule(this.basketMid.height, halfBordersWidth, startPos - halfBordersWidth, this.basketMid.height * 0.5, Phaser.Math.PI2 * 0.25);
+	this.borderRightBody.body.clearShapes();
+	this.borderRightBody.body.addCapsule(this.basketMid.height, halfBordersWidth, endPos + halfBordersWidth, this.basketMid.height * 0.5, Phaser.Math.PI2 * 0.25);
+	this.borderBottomBody.body.clearShapes();
+	this.borderBottomBody.body.addRectangle(enterSize, bordersWidth, startPos + enterSize * 0.5, this.basketMid.height);
 
 	this.rotation = -0.25 * Phaser.Math.PI2;
+	for (var i = 0; i < this.borderBodies.length; i++) {
+		this.borderBodies[i].body.x = this.x;
+		this.borderBodies[i].body.y = this.y;
+		this.borderBodies[i].body.rotation = this.rotation;
+		//this.borderBodies[i].body.rotateRight(this.speed / Math.PI * 180);
+	}
 
 	this.updateBodies();
+};
+
+Sachock.prototype.startRotation = function() {
+	for (var i = 0; i < this.borderBodies.length; i++) {
+		this.borderBodies[i].body.angularVelocity = this.game.physics.p2.pxm(this.speed);
+		this.borderBodies[i].body.angularForce = this.acc;
+	}
 };
 
 module.exports = Sachock;
@@ -251,19 +268,10 @@ Play.prototype = {
 
 		this.game.world.setBounds(-this.game.width, -this.game.height, this.game.width * 3, this.game.height * 3);
 		this.game.physics.startSystem(Phaser.Physics.P2JS);
-		this.game.physics.p2.restituion = 0.8;
+		this.game.physics.p2.restituion = 0.9;
 
-		//this.apple = this.game.add.sprite(340, 550, "playAtlas", "apple0", null);
 		this.apple = new Phaser.Sprite(this.game, 340, 550, "playAtlas", "apple0");
 		this.apple.anchor.setTo(0.5, 0.5);
-		/*this.game.physics.p2.enable(this.apple);
-		this.apple.body.clearShapes();
-		this.appleShape = this.apple.body.addCircle(this.apple.width * 0.5);
-		this.apple.body.debug = true;*/
-
-		//this.apple.width = this.apple.height = 250;
-		//this.appleShape.radius = 100;
-		//this.appleShape.updateBoundingRadius();*/
 		this.game.time.events.add(Phaser.Timer.SECOND * 5, this.addApple, this).autoDestroy = true;
 
 		this.sachockBackContainer = this.game.add.group();
@@ -274,27 +282,16 @@ Play.prototype = {
 		this.sachock.x = this.game.width - 60;
 		this.sachock.y = this.game.height * 0.5;
 		this.sachock.events.onComplete.add(this.sachockCompleteHandler, this);
-		this.sachock.start(this.game.height * 0.5 - 60, 1000, -0.03, 0);
+		this.sachock.start(this.game.height * 0.5 - 60, 1000, -20, -3);
 
 		this.MAX_AIM_R = this.game.width - 60;
+		this.MIN_AIM_R = 30;
 
 		this.aim = this.game.add.sprite(this.sachock.x, this.sachock.y, "playAtlas", "aim");
 		this.aim.anchor.setTo(0.5, 0.5);
 		this.appleContainer.add(this.aim);
 		this.startAim();
 		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
-
-		/*this.testGroup = this.game.add.group();
-		this.testSprite = this.game.add.sprite(0, 0, "playAtlas", "sachockEnterTop");
-		this.game.physics.p2.enableBody(this.testSprite);
-		this.testSprite.body.kinematic = true;
-		this.testSprite.body.debug = true;
-		this.testSprite.body.x = 100;
-		this.testSprite.body.y = 150;
-		this.testGroup.add(this.testSprite);
-		this.testGroup.x = this.game.width * 0.5;
-		this.testGroup.y = this.game.height * 0.5;
-		this.game.add.tween(this.testGroup).to({y:100}, 1000, Phaser.Easing.Cubic.InOut, true, 0, 1000, true);*/
 
 		this.cursors = this.game.input.keyboard.createCursorKeys();
 	},
@@ -307,7 +304,9 @@ Play.prototype = {
 				this.apple.height = this.apple.width = this.apple.width + 4;
 				this.appleShape.radius += this.game.physics.p2.pxm(2);
 				this.appleShape.updateBoundingRadius();
-				this.apple.body.debugBody.draw();
+				if (this.apple.body.debugBody) {
+					this.apple.body.debugBody.draw();
+				}
 			}
 		}
 		else {
@@ -338,35 +337,10 @@ Play.prototype = {
 			}
 			this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 		}
-
-		/*if (this.apple) {
-			this.appleShape.radius -= 0.01;
-			this.apple.width -= 0.45;
-			this.apple.height -= 0.45;
-			//this.appleShape.updateBoundingRadius();
-			//this.apple.body.debugBody.draw();
-
-			if (this.cursors.left.isDown) {
-				this.apple.body.rotateLeft(80);
-			}
-			else if (this.cursors.right.isDown) {
-				this.apple.body.rotateRight(80);
-			}
-			else {
-				this.apple.body.setZeroRotation();
-			}
-
-			if (this.cursors.up.isDown) {
-				this.apple.body.thrust(400);
-			}
-			else if (this.cursors.down.isDown) {
-				this.apple.body.reverse(400);
-			}
-		}*/
 	},
 	sachockCompleteHandler: function(sachock) {
 		this.removeApple();
-		sachock.start(this.game.height * 0.5 - 60, 1000, -0.03, 0);
+		sachock.start(this.game.height * 0.5 - 60, 1000, -20, -3);
 		this.startAim();
 	},
 	positionOnRadius : function(target, center, angle, radius) {
@@ -376,7 +350,7 @@ Play.prototype = {
 	startAim : function() {
 		this.aim.scale.setTo(1, 1);
 		this.aimAngle = this.game.rnd.realInRange(0.25, 0.375) * Phaser.Math.PI2;
-		this.aimR = this.sachock.MIN_POLE_SIZE;
+		this.aimR = 30;
 		this.positionOnRadius(this.aim, this.sachock.position, this.aimAngle, this.aimR);
 		this.aimSpeed = 0;
 		this.game.time.events.add(Phaser.Timer.SECOND * 0.5, this.setAimSpeed, this).autoDestroy = true;
@@ -394,14 +368,16 @@ Play.prototype = {
 		this.game.physics.p2.enable(this.apple);
 		this.apple.body.clearShapes();
 		this.appleShape = this.apple.body.addCircle(this.apple.width * 0.5);
-		this.apple.body.debug = true;
+		this.apple.body.debug = false;
 	},
 	removeApple : function() {
-		this.game.physics.p2.removeBody(this.apple.body);
-		this.apple.body.destroy();
-		this.apple.body = null;
-		this.appleShape = null;
-		this.appleContainer.remove(this.apple);
+		if (this.apple) {
+			this.game.physics.p2.removeBody(this.apple.body);
+			this.apple.body.destroy();
+			this.apple.body = null;
+			this.appleShape = null;
+			this.appleContainer.remove(this.apple);
+		}
 	}
 };
   
