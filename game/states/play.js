@@ -40,7 +40,7 @@ Play.prototype = {
 		if (this.creatingApple) {
 			if (this.game.input.mousePointer.isUp) {
 				this.creatingApple = false;
-				this.game.physics.p2.gravity.y = 150;
+				this.game.physics.p2.gravity.y = 110;
 			}
 			else {
 				this.apple.height = this.apple.width = this.apple.width + 4;
